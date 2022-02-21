@@ -1,6 +1,7 @@
 * {
-	box-sizing: border-box;
+box-sizing: border-box;
 }
+
 
 body {
   background-color: #ae9edb;
@@ -9,73 +10,76 @@ body {
   font-family: Verdana, Helvetica, sans-serif;
 }
 
-html{
-  margin: 0px;
-  padding: 0px;
-}
 
-h1 {
-  padding-top: 40px;
-  color: black;
-  text-align: center;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+.navWrapper{
+  display: flex;
+  justify-content: flex-start;
   background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
+  padding: 2vmin;
 }
 
-li {
-  float: left;
+.navMenu{
+  display: flex;
+  width: 50vmin;
+  justify-content: space-between;
 }
 
-li a {
-  display: block;
+a, a:visited{
   color: white;
-  text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
+a:hover:not(.active) {
   background-color: #111;
 }
 
-.active {
+.activeLink {
   background-color: #5d28ed;
+
 }
 
-img{
-  display: inline-block;
+.mainContainer{
+  display: flex;
+  flex-direction: row;
+}
+
+.imageContainer{
+  display: flex;
   width: 50%;
-	float: left;
 	background-color: #1e1438;
   padding: 20px;
+  flex-wrap: wrap;
   object-fit: contain;
+  justify-content: flex-end;
+}
 
+.header {
+  display: flex;
+  padding: 20px;
+  color: black;
+  align-self: center;
+  justify-content: center;
 
+}
+img {
+  width: 100%;
+  flex-flow: column wrap;
+  justify-content: space-around;
 }
 
 .info{
+  display: flex;
   width: 50%;
-  float: right;
+  justify-content: flex-start;
   padding: 20px;
   background-color: #cec2ed;
   font-family: Verdana, Helvetica, sans-serif;
   font-size: 20px;
-  display: inline-block;
+  flex-direction: column;
 }
 
 
 .reference{
   margin: 20px;
   padding: 20px;
-  width: 100%;
-  text-align: left;
 }
